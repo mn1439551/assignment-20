@@ -97,7 +97,7 @@ INSERT INTO students(student_id, full_name, email, age, registration_date, regis
 
 
 INSERT INTO students(student_id, full_name, email, age, registration_date, registration_time) VALUES(
-    2, "Mohammad Naser", "mohammadnaser20221", 26, "2026-10-22", "11:25:00"
+    2, "Mohammad Naser", "mohammadnaser20221@gmail.com", 26, "2026-10-22", "11:25:00"
 )
 
 

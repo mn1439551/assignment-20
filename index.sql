@@ -17,7 +17,7 @@ INSERT INTO students_table(student_id, first_name, last_name, age, grade, city) 
     (4, "Mariam", "Ata", 19, 'C', "Beirut"),
     (5, "Khaled", "Najjar", 16, 'B', "Tyre"),
     (6, "Reem", "Salem", 18, 'A', "Tripoli"),
-    (7, "Youssef", "Hany", 17, 'C', "NULL"),
+    (7, "Youssef", "Hany", 17, 'C', NULL),
     (8, "Hiba", "Zein", 20, 'B', "Beirut"),
     (9, "Fadi", "Hashem", 16, 'A', "Tyre"),
     (10, "Layla", "Hassan", 17, 'B', "Tripoli");
@@ -73,6 +73,14 @@ SELECT *
 FROM students_table
 WHERE city = "Beirut" OR city = "Tripoli";
 
+UPDATE student_table
+SET grade = 'A'
+WHERE student_id = 4
+
+UPDATE student_table
+SET city = 'Beirut'
+WHERE city = 'Tripoli'
+
 DELETE FROM students_table
 WHERE student_id = 10;
 
@@ -97,7 +105,7 @@ INSERT INTO students(student_id, full_name, email, age, registration_date, regis
 
 
 INSERT INTO students(student_id, full_name, email, age, registration_date, registration_time) VALUES(
-    2, "Mohammad Naser", "mohammadnaser20221@gmail.com", 26, "2026-10-22", "11:25:00"
+    2, "Mohammad Naser", "mohammadnaser20221", 26, "2026-10-22", "11:25:00"
 )
 
 
